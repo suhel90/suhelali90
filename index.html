@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suhel Ali | Aspiring Bioinformatics Analyst</title>
+  <meta name="description" content="Portfolio of Suhel Ali, an aspiring Bioinformatics Analyst with a foundation in the fundamentals of biotechnology.">
+  <meta name="theme-color" content="#0284c7">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="nav__brand" aria-label="Suhel Ali, back to top">
+        <span class="nav__logo" aria-hidden="true">SA</span>
+        <span class="nav__name">Suhel Ali</span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" type="button"
+              aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#education">Education</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#achievements">Achievements</a></li>
+        <li><a class="nav__link" href="#resume">Resume</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HOME / HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow" data-bind="hero-eyebrow">Hello, I'm</p>
+          <h1 class="hero__title" id="hero-title" data-bind="name">Suhel Ali</h1>
+          <p class="hero__headline" data-bind="headline">Aspiring Bioinformatics Analyst</p>
+          <p class="hero__intro" data-bind="intro"></p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View My Projects</a>
+            <a class="btn btn--outline-light" href="assets/documents/resume.pdf" download="Suhel-Ali-Resume.pdf"
+               data-doc-link data-doc-label="Resume">Download Resume</a>
+          </div>
+
+          <ul class="social-list" id="hero-social" aria-label="Social profiles"></ul>
+        </div>
+
+        <div class="hero__photo">
+          <div class="hero__photo-frame">
+            <img src="assets/images/profile.jpg" alt="Portrait of Suhel Ali" width="700" height="900">
+          </div>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#about" aria-label="Scroll to About section">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">About</p>
+          <h2 class="section__title" id="about-title">About Me</h2>
+        </header>
+        <div class="about reveal">
+          <div class="about__text" id="about-text"></div>
+          <ul class="about__facts" id="about-facts"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section--alt" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Education</p>
+          <h2 class="section__title" id="education-title">Academic Background</h2>
+        </header>
+        <ol class="timeline" id="education-list"></ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Skills</p>
+          <h2 class="section__title" id="skills-title">Technical Foundations</h2>
+        </header>
+        <div class="skills" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Projects</p>
+          <h2 class="section__title" id="projects-title">Selected Projects</h2>
+        </header>
+        <div class="cards cards--2" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Achievements</p>
+          <h2 class="section__title" id="achievements-title">Extracurricular Achievements</h2>
+        </header>
+        <ol class="achievements" id="achievements-list"></ol>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section class="section resume" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="resume__box reveal">
+          <div class="resume__text">
+            <p class="section__kicker section__kicker--light">Resume</p>
+            <h2 class="section__title section__title--light" id="resume-title">Review my qualifications</h2>
+            <p>Recruiters and hiring teams are warmly invited to review my resume for internships and entry-level opportunities in bioinformatics and related fields.</p>
+            <p class="resume__status" id="resume-status" role="status"></p>
+          </div>
+          <div class="resume__actions">
+            <a class="btn btn--primary" href="assets/documents/resume.pdf" target="_blank" rel="noopener"
+               data-doc-link data-doc-label="Resume">View Resume</a>
+            <a class="btn btn--outline-light" href="assets/documents/resume.pdf" download="Suhel-Ali-Resume.pdf"
+               data-doc-link data-doc-label="Resume">Download Resume</a>
+          </div>
+        </div>
+
+        <!-- Academic documents -->
+        <header class="section__head section__head--sub reveal">
+          <h3 class="section__subtitle section__subtitle--light">Academic Documents</h3>
+        </header>
+        <div class="cards cards--2" id="documents-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Contact</p>
+          <h2 class="section__title" id="contact-title">Get In Touch</h2>
+        </header>
+
+        <div class="contact">
+          <div class="contact__info card reveal">
+            <h3 class="card__title">Contact details</h3>
+            <p class="contact__email-row">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 6h16v12H4z M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>
+              <a id="contact-email" class="contact__email" href="#">Email</a>
+            </p>
+            <button class="btn btn--secondary btn--small" id="copy-email" type="button">Copy email address</button>
+            <p class="contact__feedback" id="copy-feedback" role="status" aria-live="polite"></p>
+            <ul class="social-list social-list--dark" id="contact-social" aria-label="Social profiles"></ul>
+          </div>
+
+          <form class="contact__form card reveal" id="contact-form" novalidate>
+            <h3 class="card__title">Send a message</h3>
+            <p class="form__note">
+              This is a static website with no server behind it, so messages cannot be sent from this form.
+              The button below prepares a draft in your own email app, and you send it from there.
+            </p>
+            <div class="form__field">
+              <label for="msg-name">Your name</label>
+              <input id="msg-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form__field">
+              <label for="msg-subject">Subject</label>
+              <input id="msg-subject" name="subject" type="text">
+            </div>
+            <div class="form__field">
+              <label for="msg-body">Message</label>
+              <textarea id="msg-body" name="message" rows="5" required></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Open draft in my email app</button>
+            <p class="contact__feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>&copy; <span id="footer-year"></span> <span data-bind="name">Suhel Ali</span>. All rights reserved.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
